@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for k in range(ord('a'), ord('z') + 1):
-    print("{:s}".format(chr(k)), end="")
+"""Print the alphabet in lowercase,no new line."""
+
+for letter in range(97, 123):
+    print("{}".format(chr(letter)), end="")
