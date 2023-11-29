@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for asc in range(97, 123):
-    print('{}'.format(chr(asc)), end='')
+for k in range(ord('a'), ord('z') + 1):
+    print("{:s}".format(chr(k)), end="")
