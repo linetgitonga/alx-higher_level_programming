@@ -1,6 +1,10 @@
 /* Author -Liinet Gitonga
  */
-include "lists.h"
+
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
 
 /**
  * check_cycle -The  function should check if a singly linked list has a cycle in it.
