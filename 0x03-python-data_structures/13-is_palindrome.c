@@ -30,10 +30,11 @@ void reverse_listint(listint_t **head)
  * Return: If the linked list is not a palindrome - 0.
  *         If the linked list is a palindrome - 1.
  */
+
 int is_palindrome(listint_t **head)
 {
 	listint_t *tmp, *rev, *mid;
-	size_t size = 0, n;
+	size_t size = 0, i;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
@@ -46,7 +47,7 @@ int is_palindrome(listint_t **head)
 	}
 
 	tmp = *head;
-	for (n = 0; n < (size / 2) - 1; n++)
+	for (i = 0; i < (size / 2) - 1; i++)
 		tmp = tmp->next;
 
 	if ((size % 2) == 0 && tmp->n != tmp->next->n)
