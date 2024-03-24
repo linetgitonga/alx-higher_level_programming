@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+This script takes in an argument and
+displays all values in the states
+3-my_safe_filter_states.py
+"""
 import MySQLdb
 from sys import argv
 
